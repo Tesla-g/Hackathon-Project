@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Custom Google Map</title>
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAt_v0XGhhlnpF0EUNYV7sKrSuqViQ7QGM&callback=initMap"></script>
+    <script>
+      function initMap() {
+        // Create a map object and center it on a specific location
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 12,
+          center: { lat: 37.7749, lng: -122.4194 },
+        });
+
+        // Add markers for events on the map
+        var marker1 = new google.maps.Marker({
+          position: { lat: 37.7749, lng: -122.4194 },
+          map: map,
+          title: "Event 1",
+        });
+
+        var marker2 = new google.maps.Marker({
+          position: { lat: 37.7815, lng: -122.4114 },
+          map: map,
+          title: "Event 2",
+        });
+
+        var marker3 = new google.maps.Marker({
+          position: { lat: 37.7833, lng: -122.4167 },
+          map: map,
+          title: "Event 3",
+        });
+      }
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAt_v0XGhhlnpF0EUNYV7sKrSuqViQ7QGM&callback=initMap"
+    ></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Event Listing Site</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Event Listing Site</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="featured-events">
+        <h2>Featured Events</h2>
+        <div class="event">
+          <h3>Event Name</h3>
+          <p>Event Date: <span class="event-date">January 1, 2023</span></p>
+          <p>
+            Event Location:
+            <span class="event-location">123 Main St, Anytown USA</span>
+          </p>
+          <p>
+            Description:
+            <span class="event-description"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
+            >
+          </p>
+        </div>
+        <div class="event">
+          <h3>Event Name</h3>
+          <p>Event Date: <span class="event-date">January 2, 2023</span></p>
+          <p>
+            Event Location:
+            <span class="event-location">456 Main St, Anytown USA</span>
+          </p>
+          <p>
+            Description:
+            <span class="event-description"
+              >Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.</span
+            >
+          </p>
+        </div>
+      </section>
+
+      <section id="all-events">
+        <h2>All Events</h2>
+        <ul>
+          <li>
+            <h3>Event Name</h3>
+            <p>Event Date: <span class="event-date">January 1, 2023</span></p>
+            <p>
+              Event Location:
+              <span class="event-location">123 Main St, Anytown USA</span>
+            </p>
+            <p>
+              Description:
+              <span class="event-description"
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.</span
+              >
+            </p>
+          </li>
+          <li>
+            <h3>Event Name</h3>
+            <p>Event Date: <span class="event-date">January 2, 2023</span></p>
+            <p>
+              Event Location:
+              <span class="event-location">456 Main St, Anytown USA</span>
+            </p>
+            <p>
+              Description:
+              <span class="event-description"
+                >Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</span
+              >
+            </p>
+          </li>
+          <li>
+            <h3>Event Name</h3>
+            <p>Event Date: <span class="event-date">January 3, 2023</span></p>
+            <p>
+              Event Location:
+              <span class="event-location">789 Main St, Anytown USA</span>
+            </p>
+            <p>
+              Description:
+              <span class="event-description"
+                >Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.</span
+              >
+            </p>
+          </li>
+          <!-- add more event listings as needed -->
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Event Listing Site</p>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
