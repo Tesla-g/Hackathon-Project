@@ -123,14 +123,16 @@ aside .top {
 }
 aside .logo {
   display: flex;
+  flex-direction: column;
   gap: 0.8rem;
 }
 aside .close {
   display: none;
 }
 aside .logo img {
-  width: 2rem;
-  height: 2rem;
+  width: 10rem;
+  height: 9rem;
+  border-radius: 20px;
 }
 .container {
   display: grid;
@@ -239,7 +241,7 @@ main .insights > div .middle {
 }
 main .insights h3 {
   margin: 1rem 0 0 0.6rem;
-  font-size: 1rem;
+  font-size: 1.49rem;
 }
 main .insights .progress {
   position: relative;
@@ -306,7 +308,8 @@ main .recent-orders table :hover {
   box-shadow: none;
 }
 main table tbody td {
-  height: 2.8rem;
+  height: 7.8rem;
+  font-size: 16px;
   border-bottom: 1px solid var(--color-light);
   color: var(--color-dark-variant);
 }
@@ -380,6 +383,7 @@ main .recent-orders a {
 }
 
 .right .sales-analytics h2 {
+  margin-top: 2.8rem;
   margin-bottom: 0.8rem;
 }
 .right .sales-analytics .item {
@@ -533,6 +537,7 @@ main .recent-orders a {
     width: 100%;
     margin: 0;
   }
+
   .right {
     width: 94%;
     margin: 0 auto 4rem;
